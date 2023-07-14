@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import PeopleList from './PeopleList';
 import UseStateObject from './useStateObject';
+import Counter from './Counter';
+import UseEffectsBasics from './UseEffectsBasics';
 
 function App() {
   
@@ -9,7 +11,9 @@ function App() {
     <>
       <h2>This is the list of people</h2>
       {/* <PeopleList/> */}
-      <UseStateObject/>
+      {/* <UseStateObject/> */}
+      {/* <Counter/> */}
+      <UseEffectsBasics/>
     </>
   )
 }
