@@ -4,6 +4,7 @@ import UseStateObject from './useStateObject';
 import Counter from './Counter';
 import UseEffectsBasics from './UseEffectsBasics';
 import Multiple_returns_basics from './Multiple_returns_basics';
+import ShortCircuiting from './ShortCircuiting';
 
 function App() {
   
@@ -15,7 +16,8 @@ function App() {
       {/* <UseStateObject/> */}
       {/* <Counter/> */}
       {/* <UseEffectsBasics/> */}
-      <Multiple_returns_basics/>
+      {/* <Multiple_returns_basics/> */}
+      <ShortCircuiting/>
     </>
   )
 }

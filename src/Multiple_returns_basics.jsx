@@ -9,8 +9,14 @@ function Multiple_returns_basics() {
     const fetchUser = async ()=>{
       try {
         const resp = await fetch('https://api.github.com/users/QuincyLarson')
+        if(!resp.ok){
+          setIsError(true);
+          setIsLoading(false);
+          return
+        }
         const user = await resp.json()
         setUser(user);
+        
 
       } catch (error) {
         setIsError(true);
@@ -30,13 +36,19 @@ if(isError){
   return (<h1>There was an error....</h1>)
 }
 
-return (
-<>
-  <img src={user.avatar_url} alt="user image" />
-  <h2>{user.login}</h2>
-    <h3>{user.company}</h3>
-</>
-)
+if(user !== null){
+  const {avatar_url,login,company} = user
+  console.log(avatar_url)
+  return (
+  
+    <>
+      <img src={avatar_url} alt="user image" />
+      <h2>{login}</h2>
+        <h3>{company}</h3>
+    </>
+    )
+}
+
 }
 
 export default Multiple_returns_basics
