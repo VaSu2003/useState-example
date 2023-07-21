@@ -8,6 +8,10 @@ import ShortCircuiting from './ShortCircuiting';
 import Conditionals from './Conditionals';
 import Cleanup from './Cleanup';
 import { ExComp1,ExComp2 } from './Example';
+import List from './List';
+import Person from './Person';
+import './app.css'
+import ControlledInputs from './controlledInputs';
 
 function App() {
   
@@ -23,8 +27,11 @@ function App() {
       {/* <ShortCircuiting/> */}
       {/* <Conditionals/> */}
       {/* <Cleanup/> */}  
-      <ExComp1/>
-      <ExComp2/>
+      {/* <ExComp1/>
+      <ExComp2/> */}
+      {/* <List/>
+      <Person/> */}
+      <ControlledInputs/>
     </>
   )
 }
