@@ -5,6 +5,7 @@ import Counter from './Counter';
 import UseEffectsBasics from './UseEffectsBasics';
 import Multiple_returns_basics from './Multiple_returns_basics';
 import ShortCircuiting from './ShortCircuiting';
+import Conditionals from './Conditionals';
 
 function App() {
   
@@ -17,7 +18,8 @@ function App() {
       {/* <Counter/> */}
       {/* <UseEffectsBasics/> */}
       {/* <Multiple_returns_basics/> */}
-      <ShortCircuiting/>
+      {/* <ShortCircuiting/> */}
+      <Conditionals/>
     </>
   )
 }
