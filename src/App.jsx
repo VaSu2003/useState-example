@@ -6,6 +6,8 @@ import UseEffectsBasics from './UseEffectsBasics';
 import Multiple_returns_basics from './Multiple_returns_basics';
 import ShortCircuiting from './ShortCircuiting';
 import Conditionals from './Conditionals';
+import Cleanup from './Cleanup';
+import { ExComp1,ExComp2 } from './Example';
 
 function App() {
   
@@ -19,7 +21,10 @@ function App() {
       {/* <UseEffectsBasics/> */}
       {/* <Multiple_returns_basics/> */}
       {/* <ShortCircuiting/> */}
-      <Conditionals/>
+      {/* <Conditionals/> */}
+      {/* <Cleanup/> */}  
+      <ExComp1/>
+      <ExComp2/>
     </>
   )
 }
