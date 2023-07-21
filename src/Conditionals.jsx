@@ -1,13 +1,30 @@
 import React,{useState} from 'react'
 
 function Conditionals() {
-    const [bool,setBool] = useState(true);
+    const [user,setUser] = useState(null);
     let text;
+
+    function login(){
+        setUser({name : "Vaibhav"})
+    }
+    function logout(){
+        setUser(null)
+    }
     
   return (
     <>
-        {bool ? text = (<div>Truthy Component</div>) : text = (<div>False Component</div>)}
-        <button onClick={()=>{bool? setBool(false) : setBool(true)}}>Toggle Element</button>
+        {user ? (
+            <>
+            <h4>Hello, There {user.name}</h4>
+            <button onClick={logout}>Logout</button>    
+            </>
+        ) :
+        (
+            <>
+            <h4>Please Login</h4>
+            <button onClick={login}>Login</button>    
+            </>
+        )}
     </>
   )
 }
