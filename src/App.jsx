@@ -13,6 +13,7 @@ import Person from './Person';
 import './app.css'
 import ControlledInputs from './controlledInputs';
 import UseRefBasics from './UseRefBasics';
+import ToggleExample from './ToggleExample';
 
 function App() {
   
@@ -33,7 +34,8 @@ function App() {
       {/* <List/>
       <Person/> */}
       {/* <ControlledInputs/> */}
-      <UseRefBasics/>
+      {/* <UseRefBasics/> */}
+      <ToggleExample/>
     </>
   )
 }
