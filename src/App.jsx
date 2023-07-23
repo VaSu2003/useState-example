@@ -12,6 +12,7 @@ import List from './List';
 import Person from './Person';
 import './app.css'
 import ControlledInputs from './controlledInputs';
+import UseRefBasics from './UseRefBasics';
 
 function App() {
   
@@ -31,7 +32,8 @@ function App() {
       <ExComp2/> */}
       {/* <List/>
       <Person/> */}
-      <ControlledInputs/>
+      {/* <ControlledInputs/> */}
+      <UseRefBasics/>
     </>
   )
 }
