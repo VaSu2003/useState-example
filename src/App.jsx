@@ -15,10 +15,11 @@ import ControlledInputs from './controlledInputs';
 import UseRefBasics from './UseRefBasics';
 import ToggleExample from './ToggleExample';
 import Navbar from './Navbar';
+import { useGlobalContext } from './Context';
 
 function App() {
-  
-
+  const {user,setUser} = useGlobalContext()
+  console.log(user)
   return (
     <>
       {/* <h2>This is the list of people</h2> */}
