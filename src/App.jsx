@@ -14,6 +14,7 @@ import './app.css'
 import ControlledInputs from './controlledInputs';
 import UseRefBasics from './UseRefBasics';
 import ToggleExample from './ToggleExample';
+import Navbar from './Navbar';
 
 function App() {
   
@@ -35,7 +36,8 @@ function App() {
       <Person/> */}
       {/* <ControlledInputs/> */}
       {/* <UseRefBasics/> */}
-      <ToggleExample/>
+      {/* <ToggleExample/> */}
+      <Navbar/>
     </>
   )
 }
