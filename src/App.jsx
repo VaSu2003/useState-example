@@ -16,10 +16,11 @@ import UseRefBasics from './UseRefBasics';
 import ToggleExample from './ToggleExample';
 import Navbar from './Navbar';
 import { useGlobalContext } from './Context';
+import ReducerBasics from './useReducer';
 
 function App() {
   const {user,setUser} = useGlobalContext()
-  console.log(user)
+  
   return (
     <>
       {/* <h2>This is the list of people</h2> */}
@@ -38,7 +39,8 @@ function App() {
       {/* <ControlledInputs/> */}
       {/* <UseRefBasics/> */}
       {/* <ToggleExample/> */}
-      <Navbar/>
+      {/* <Navbar/> */}
+      <ReducerBasics/>
     </>
   )
 }
